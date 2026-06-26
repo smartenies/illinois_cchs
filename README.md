@@ -12,7 +12,7 @@ Public-use data and documentation from the first wave of the Illinois Childcare 
 
 ## Survey weights
 
-Responses come from a non-probability (convenience) panel. Post-survey weights (`normalized_weight`) were built by raking to American Community Survey 5-year PUMS (2020–2024) targets for Illinois adults with a co-resident child under 18, across age, gender, race/ethnicity, and education. Use the weights for population estimates, e.g. in R:
+Responses come from a non-probability (convenience) panel. Post-survey weights (`normalized_weight`) were built by raking to American Community Survey 5-year PUMS (2020–2024) targets for Illinois adults with a co-resident child under 18, across age, gender, race/ethnicity, and education.
 
 Weighting efficiency ≈ 0.72 (effective n ≈ 748). 
 
