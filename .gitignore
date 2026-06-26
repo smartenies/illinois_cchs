@@ -52,4 +52,5 @@ rsconnect/
 figures/
 results/
 raw_data/
-documentation/drafts
+data/
+documentation/
