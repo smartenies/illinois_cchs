@@ -1,0 +1,13 @@
+step,detail
+Records in (weighted file),1054
+Records out (public file),1054
+Direct identifiers / free-text dropped,demo_5a; demo_6a; demo_9a; screen_3b
+Re-contact flags dropped,contact_1; contact_2
+Timestamp/process fields dropped,exact timestamps removed (year-level only retained where applicable)
+Birth year (demo_4) dropped; age_cat retained,yes
+Small-cell threshold,5
+ZIP records suppressed,772
+County records suppressed,146
+Raw demographic source vars dropped,yes
+Demographic x geo combos <= threshold (flagged for review),439
+record_id replaced with public_id,yes (crosswalk kept in restricted environment only)
