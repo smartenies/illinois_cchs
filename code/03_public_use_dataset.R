@@ -31,7 +31,8 @@ n_start <- nrow(pub_df)
 
 direct_identifiers <- c(
   "demo_5a", "demo_6a", "demo_9a",  # free-text "specify" fields
-  "screen_3b"                       # free-text childcare role specify
+  "screen_3b",                      # free-text childcare role specify
+  "cn_2a", "cn_4a", "cn_5a",        # free-tect childcare needs questions
 )
 
 recontact_flags <- c("contact_1", "contact_2")
