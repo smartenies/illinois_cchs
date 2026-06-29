@@ -119,7 +119,7 @@ small_combos <- pub_df %>%
 write_csv(small_combos, here::here("results", "small_combos.csv"))
 
 #' 439 combinations are <= 5 in a cell. Going to supress county for now
-pub_df <- select(pub_df, -county)
+pub_df <- select(pub_df, -geo_keep)
 
 #' --------------------------------------------------
 #' 8. Final checks and export
@@ -129,7 +129,7 @@ suspect <- names(pub_df)[str_detect(names(pub_df),
                                  regex("email|aid|name|phone|ssn|address|timestamp|_complete$|specify",
                                        ignore_case = TRUE))]
 
-out_csv <- here::here("public_data", "cchs_public_use_data_20260626.csv")
+out_csv <- here::here("public_data", "cchs_public_use_data_20260629.csv")
 write_csv(pub_df, out_csv)
 
 #' Write a suppression / de-identification log for the audit trail
