@@ -200,7 +200,8 @@ duration_check <- select(data_check, survey_duration)
 #' issues (tenure in home exceeds age, number of children doesn't add up)
 ineligible_1 <- data_check %>%
   filter(gender_mismatch == 1 | age_mismatch == 1 | age_ineligible == 1 |
-         home_tenure_issue == 1 | num_kid_check == 1 | #num_adults_check == 1 |
+         home_tenure_issue == 1 | tenure_exceeds_age == 1 |
+           num_kid_check == 1 | #num_adults_check == 1 |
          dup_email == 1) 
 
 #' Second, drop anyone who has a race mismatch (other than those who only checked

@@ -1,5 +1,5 @@
 #' -----------------------------------------------------------------------------
-#' Date created: Jun2 2, 2026
+#' Date created: June 2, 2026
 #' Author: Sheena Martenies
 #' Contact: smarte4@illinois.edu
 #' 
@@ -94,7 +94,7 @@ data1 <- data1 %>%
     gender   = factor(gender, levels = c("Female","Male")),
     race_eth = factor(race_eth,
                       levels = c("Hispanic","White","Black",
-                                 "Asian/PI","Other/Multiple")),
+                                 "Other/Multiple")),
     edu     = factor(edu,
                      levels = c("HS diploma/GED or less",
                                 "Some college/Associate",
@@ -240,7 +240,7 @@ data1_weights <- select(data1_complete, record_id, raw_weight:normalized_weight)
 data1_weighted <- left_join(data1, data1_weights, by = "record_id")
 data1_weighted$normalized_weight[is.na(data1_weighted$normalized_weight)] <- 0
 
-write_csv(data1_weighted, here::here("data", "il_cchs_data_20260625.csv"))
+write_csv(data1_weighted, here::here("data", "il_cchs_data_20260629.csv"))
 
 #' --------------------------------------------------
 #' Summary statistics
@@ -292,4 +292,4 @@ demo_table_print <- demo_table %>%
   mutate(across(c(pct_unwtd, pct_wtd, pct_wtd_se), ~ round(.x, 1)))
 demo_table_print
 
-write_csv(demo_table_print, here::here("results", "cchs_demographics_20260625.csv")) 
+write_csv(demo_table_print, here::here("results", "cchs_demographics_20260629.csv")) 

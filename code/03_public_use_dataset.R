@@ -13,10 +13,9 @@
 library(tidyverse)
 
 small_cell <- 5          # protocol: ZIP/county with <= this many participants is suppressed
-geo_level <- "county"    # "county" (recommended/conservative), "zip", or "both"
 drop_demo <- TRUE        # release collapsed weighting vars; drop raw source vars
 
-pub_df <- read_csv(here::here("data", "il_cchs_data_20260625.csv"))
+pub_df <- read_csv(here::here("data", "il_cchs_data_20260629.csv"))
 n_start <- nrow(pub_df)
 
 #' --------------------------------------------------
@@ -32,7 +31,7 @@ n_start <- nrow(pub_df)
 direct_identifiers <- c(
   "demo_5a", "demo_6a", "demo_9a",  # free-text "specify" fields
   "screen_3b",                      # free-text childcare role specify
-  "cn_2a", "cn_4a", "cn_5a",        # free-tect childcare needs questions
+  "cn_2a", "cn_4a", "cn_5a"         # free-text childcare needs questions
 )
 
 recontact_flags <- c("contact_1", "contact_2")
@@ -88,7 +87,7 @@ pub_df <- pub_df %>%
   relocate(public_id)
 
 id_crosswalk <- select(pub_df, public_id, record_id)
-write_csv(id_crosswalk, here::here("data", "cchs_id_crosswalk_20260626.csv"))
+write_csv(id_crosswalk, here::here("data", "cchs_id_crosswalk_20260629.csv"))
 
 pub_df <- pub_df %>%
   select(-any_of("record_id"))
@@ -130,7 +129,7 @@ suspect <- names(pub_df)[str_detect(names(pub_df),
                                  regex("email|aid|name|phone|ssn|address|timestamp|_complete$|specify",
                                        ignore_case = TRUE))]
 
-out_csv <- here::here("public_data", "cchs_public_use_20260626.csv")
+out_csv <- here::here("public_data", "cchs_public_use_data_20260626.csv")
 write_csv(pub_df, out_csv)
 
 #' Write a suppression / de-identification log for the audit trail
@@ -165,5 +164,5 @@ deid_log <- tibble(
   )
 )
 deid_log
-write_csv(deid_log, here::here("public_data", "cchs_deidentification_log_20260626.csv"))
+write_csv(deid_log, here::here("public_data", "cchs_deidentification_log_20260629.csv"))
 
