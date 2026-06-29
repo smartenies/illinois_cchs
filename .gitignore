@@ -49,8 +49,8 @@ po/*~
 rsconnect/
 
 #' Project folders
-figures/
-results/
-raw_data/
-data/
-documentation/
+/figures/
+/results/
+/raw_data/
+/data/
+/documentation/
