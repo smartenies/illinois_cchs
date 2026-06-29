@@ -1,6 +1,6 @@
 # IL Childcare and Children's Health Study (ILCCHS) — Public-Use Data
 
-Public-use data and documentation from the first wave of the Illinois Childcare and Children's Health Study (CCHS), a cross-sectional online survey of Illinois parents and guardians of children under 18. The study covers demographics, social and environmental stressors, caregiving experiences and needs, perceptions of the environment, and physical activity.
+Public-use data and documentation from the Illinois Childcare and Children's Health Study (CCHS), a cross-sectional online survey of Illinois parents and guardians of children under 18. The study covers demographics, social and environmental stressors, caregiving experiences and needs, perceptions of the environment, and physical activity.
 
 **Study:** IRB25-1145 (University of Illinois Urbana-Champaign) · PI: Sheena Martenies, PhD · Sponsor: Institute for Government and Public Affairs
 
