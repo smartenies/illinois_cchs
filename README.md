@@ -60,7 +60,7 @@ The weights correct only for the four demographics above. Levels of hardship (fo
 
 ## De-identification
 
-Data are de-identified under the HIPAA Safe Harbor method. Direct identifiers, free-text fields, exact dates, and birth year were removed; age is released in bands, and race/ethnicity, gender, and education are released only as collapsed categories. ZIP code and county are not included in this release. Anonymity cannot be guaranteed. See `cchs_deidentification_log_20261112.csv` for details.
+Data are de-identified under the HIPAA Safe Harbor method. Direct identifiers, free-text fields, exact dates, and birth year were removed; age is released in bands, and race/ethnicity, gender, and education are released only as collapsed categories. ZIP code and county are not included in this release. Anonymity cannot be guaranteed. 
 
 ## Software
 
