@@ -6,8 +6,8 @@ Public-use data and documentation from the Illinois Childcare and Children's Hea
 
 ## Contents
 
-- `cchs_public_use_data_20260629.csv` — de-identified respondent-level data
-- `cchs_public_data_dictionary_20260629.xlsx` — variable definitions and scale references
+- `cchs_public_use_data_20261112.csv` — de-identified respondent-level data
+- `cchs_public_data_dictionary_20261112.xlsx` — variable definitions and scale references
 - `cchs_public_use_technical_doc_20260629.docx` — technical documentation
 
 ## Survey Domains
