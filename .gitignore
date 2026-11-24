@@ -36,6 +36,8 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
+.DS_store
+
 # R Environment Variables
 .Renviron
 
@@ -54,4 +56,3 @@ results/
 raw_data/
 data/
 public_data/archive/
-documentation/
